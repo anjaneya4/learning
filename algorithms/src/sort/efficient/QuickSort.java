@@ -7,9 +7,9 @@ public class QuickSort extends Sort {
 
 	@Override
 	public void sort(int[] numbers) {
-		print(numbers);
+//		print(numbers);
 		quickSort(numbers, 0, numbers.length - 1);
-		print(numbers);
+//		print(numbers);
 	}
 	
 	private void quickSort(int[] numbers, int lo, int hi){
@@ -18,7 +18,6 @@ public class QuickSort extends Sort {
 			quickSort(numbers, lo, p - 1);
 			quickSort(numbers, p + 1, hi);
 		}
-		print(numbers);
 	}
 
 	private int partition(int[] numbers, int lo, int hi){
